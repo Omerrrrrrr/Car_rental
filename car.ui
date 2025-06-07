@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Car</class>
+ <widget class="QWidget" name="Car">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>864</width>
+    <height>793</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButtonAddCar">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>Add Car</string>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonEditCar">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>Edit Car</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonRemoveCar">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>Remove Car</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="labelCarId">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Car Id: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelRegistrationNumber">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Registration Number:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelBrand">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Brand:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelModel">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Model: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelProductionYear">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Production Year:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelGear">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Gear:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelFuelType">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Fuel Type:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelPrice">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Price:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelStatus">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Status: </string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLineEdit" name="lineEditCarId"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditRegistrationNumber"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditBrand"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditModel">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditProductionYear">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditGear"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditFuelType"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditPrice"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditStatus"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QPushButton" name="pushButtonBack">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::MinimumExpanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableViewCar">
+         <property name="maximumSize">
+          <size>
+           <width>736</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+    background-color: transparent;
+    gridline-color: #b5b5b5; 
+}
+
+QTableView::item {
+    border: 1px solid #b5b5b5; 
+}
+
+QHeaderView::section {
+    background-color: transparent;
+}
+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelResult">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

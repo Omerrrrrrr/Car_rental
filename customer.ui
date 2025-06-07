@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Customer</class>
+ <widget class="QWidget" name="Customer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButtonAddCustomer">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>Add Customer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonEditCustomer">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>Edit Customer</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonRemoveCustomer">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+
+font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: #344B61;
+    border: 2px solid #F57B56; 
+    border-radius: 5px;
+
+}
+
+QPushButton:hover {
+    background-color: #344B61; 
+    color: #ffffff; 
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>Remove Customer</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="labelCustomerId">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Id:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelCustomerName">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Name: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelCustomerPhoneNumber">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Phone Number: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelEmail">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>E-mail: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelAdress">
+               <property name="styleSheet">
+                <string notr="true">font: 300 12pt &quot;Bahnschrift Light SemiCondensed&quot;;
+color: rgb(50, 50, 50);
+</string>
+               </property>
+               <property name="text">
+                <string>Adress</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="lineEditCustomerId">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit { background-color: transparent; }
+</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditCustomerName">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit { background-color: transparent; }</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditCustomerPhoneNumber">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit { background-color: transparent; }</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditEmail">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit { background-color: transparent; }</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditAdress">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit { background-color: transparent; }</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QPushButton" name="pushButtonBack">
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::MinimumExpanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QTableView" name="tableViewCustomer">
+       <property name="styleSheet">
+        <string notr="true">QTableView {
+    background-color: transparent;
+    gridline-color: #b5b5b5; 
+}
+
+QTableView::item {
+    border: 1px solid #b5b5b5; 
+}
+
+QHeaderView::section {
+    background-color: transparent;
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="0">
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Maximum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelResultCustomer">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

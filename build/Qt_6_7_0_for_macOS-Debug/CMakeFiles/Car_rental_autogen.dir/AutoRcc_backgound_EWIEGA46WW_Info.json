@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/Users/omer/Car_rental/build/Qt_6_7_0_for_macOS-Debug/Car_rental_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/omer/Car_rental/build/Qt_6_7_0_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/omer/Car_rental/build/Qt_6_7_0_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/omer/Car_rental",
+	"CMAKE_SOURCE_DIR" : "/Users/omer/Car_rental",
+	"INCLUDE_DIR" : "/Users/omer/Car_rental/build/Qt_6_7_0_for_macOS-Debug/Car_rental_autogen/include",
+	"INPUTS" : [ "/Users/omer/Car_rental/background/4964195.jpg" ],
+	"LOCK_FILE" : "/Users/omer/Car_rental/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/Car_rental_autogen.dir/AutoRcc_backgound_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "backgound" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_backgound.cpp",
+	"RCC_EXECUTABLE" : "/Users/omer/Qt/6.7.0/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/omer/Car_rental/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/Car_rental_autogen.dir/AutoRcc_backgound_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/omer/Car_rental/backgound.qrc",
+	"VERBOSITY" : 0
+}
